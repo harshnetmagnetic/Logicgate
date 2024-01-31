@@ -28,7 +28,7 @@ function Header() {
           >
             <div className="flex lg:flex-1">
               <a
-                href="#"
+                href="/"
                 className="-m-1.5 p-1.5 flex gap-4 items-center font-medium"
               >
                 <Logo />

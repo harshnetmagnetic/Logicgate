@@ -1,6 +1,6 @@
 function Testimonials() {
   return (
-    <section className="bg-white dark:bg-gray-900 mt-32">
+    <section className="bg-white mt-32">
       <div className="py-8 px-4 mx-auto max-w-[1440px] text-left lg:py-16 lg:px-6">
         <div className="flex flex-col gap-6 mb-8">
           <div className="bg-primary h-1 w-12"></div>
@@ -23,9 +23,9 @@ function Testimonials() {
                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
                 alt="profile picture"
               />
-              <div className="space-y-0.5 font-medium dark:text-white text-left">
+              <div className="space-y-0.5 font-medium text-left">
                 <div>Oliver Smith</div>
-                <div className="text-sm font-light text-gray-500 dark:text-gray-400">
+                <div className="text-sm font-light text-gray-500">
                   Marketing Manager
                 </div>
               </div>
@@ -44,9 +44,9 @@ function Testimonials() {
                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
                 alt="profile picture"
               />
-              <div className="space-y-0.5 font-medium dark:text-white text-left">
+              <div className="space-y-0.5 font-medium  text-left">
                 <div>Alexander Brown</div>
-                <div className="text-sm font-light text-gray-500 dark:text-gray-400">
+                <div className="text-sm font-light text-gray-500 ">
                   IT Specialist
                 </div>
               </div>
@@ -67,9 +67,9 @@ function Testimonials() {
                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
                 alt="profile picture"
               />
-              <div className="space-y-0.5 font-medium dark:text-white text-left">
+              <div className="space-y-0.5 font-medium  text-left">
                 <div>Emma Rodriguez</div>
-                <div className="text-sm font-light text-gray-500 dark:text-gray-400">
+                <div className="text-sm font-light text-gray-500 ">
                   Graphic Designer
                 </div>
               </div>
@@ -92,9 +92,9 @@ function Testimonials() {
                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
                 alt="profile picture"
               />
-              <div className="space-y-0.5 font-medium dark:text-white text-left">
+              <div className="space-y-0.5 font-medium  text-left">
                 <div>Lucas Nguyen</div>
-                <div className="text-sm font-light text-gray-500 dark:text-gray-400">
+                <div className="text-sm font-light text-gray-500 ">
                   Developer at Google
                 </div>
               </div>
