@@ -13,3 +13,42 @@
     @apply text-secondary bg-white;
   }
 }
+/*
+.hero-img {
+  transform-style: preserve-3d;
+
+  transition: transform 0.5s;
+  animation: rotateImg 12s linear infinite alternate;
+}
+
+.hero-img:hover {
+  /~ transform: rotate3d(0.5, 1, 0, 30deg); ~/
+}
+
+.hero-img .hero-img-message {
+  transform-style: preserve-3d;
+}
+
+.hero-img .hero-img-message span {
+  transform: translate3d(0px, 0px, 30px);
+}
+
+.hero-img .hero-img-message img {
+  transform: translate3d(0px, 0px, 60px);
+}
+
+@keyframes rotateImg {
+  0% {
+    transform: rotate3d(0.5, 1, 0, 0deg);
+  }
+  33% {
+    transform: rotate3d(1, 0.5, 0, 15deg);
+  }
+  66% {
+    transform: rotate3d(-0.5, 1, 0, -15deg);
+  }
+  100% {
+    transform: rotate3d(1, -0.5, 0, -15deg);
+  }
+}
+*/

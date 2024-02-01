@@ -1,6 +1,6 @@
 function Clients() {
   return (
-    <div className="bg-white mt-32">
+    <div className="bg-white mt-24">
       <div className="max-w-[1440px] mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:gap-8 lg:items-center">
           <div className="flex flex-col gap-6">

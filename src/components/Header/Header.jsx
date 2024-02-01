@@ -6,34 +6,36 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import Logo from "../../assets/svgs/Logo";
+import { Link, useLocation } from "react-router-dom";
 
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "Products", href: "/products" },
-  { name: "Services", href: "/services" },
-  { name: "Announcements", href: "/announcements" },
-  { name: "Company", href: "/company" },
+  { name: "Home", to: "/" },
+  { name: "Products", to: "/products" },
+  { name: "Services", to: "/services" },
+  { name: "Announcements", to: "/announcements" },
+  { name: "Company", to: "/company" },
 ];
 
 function Header() {
+  const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <>
       <header className="header absolute inset-x-0 top-0 z-50">
-        <div className="bg-white fixed inset-x-0 top-0">
+        <div className="bg-white bg-opacity-70 backdrop-blur-sm fixed inset-x-0 top-0">
           <nav
             className=" flex items-center justify-between px-8 py-4 max-w-[1440px] mx-auto"
             aria-label="Global"
           >
             <div className="flex lg:flex-1">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="-m-1.5 p-1.5 flex gap-4 items-center font-medium"
               >
                 <Logo />
                 <span>Logicgate</span>
-              </a>
+              </Link>
             </div>
             <div className="flex lg:hidden">
               <button
@@ -46,13 +48,21 @@ function Header() {
             </div>
             <div className="hidden lg:flex lg:gap-x-8">
               {navigation.map((item) => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.href}
-                  className="text-sm font-medium leading-6 hover:text-primary"
+                  to={item.to}
+                  className={`group relative
+                  ${location.pathname === item.to ? "text-primary" : ""}
+                  text-sm font-medium leading-6 hover:text-primary
+                  `}
                 >
                   {item.name}
-                </a>
+                  <span
+                    className={`absolute left-0 -bottom-1 h-0.5 bg-primary transition-width duration-300 ease-in-out group-hover:w-[100%] ${
+                      location.pathname === item.to ? "w-full" : "w-0"
+                    }`}
+                  ></span>
+                </Link>
               ))}
             </div>
           </nav>
@@ -66,9 +76,9 @@ function Header() {
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
+              <Link to="#" className="-m-1.5 p-1.5">
                 <Logo />
-              </a>
+              </Link>
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5"
@@ -82,19 +92,24 @@ function Header() {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50"
+                      to={item.to}
+                      className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-50 ${
+                        location.pathname === item.to
+                          ? "bg-primary text-white"
+                          : ""
+                      }
+                        `}
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
                 <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 flex gap-2 justify-between items-center rounded-lg px-3 py-2.5 text-base font-semibold leading-7 bg-primary text-white"
+                  <Link
+                    to="#"
+                    className="-mx-3 flex gap-2 justify-between items-center rounded-lg px-3 py-2.5 text-base font-semibold leading-7 bg-gray-50 text-primary"
                   >
                     <span>Get In Touch</span>
                     <span>
@@ -103,7 +118,7 @@ function Header() {
                         aria-hidden="true"
                       />
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

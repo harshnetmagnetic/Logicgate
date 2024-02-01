@@ -4,95 +4,95 @@ import {
   RiLinkedinFill,
   RiTwitterFill,
 } from "@remixicon/react";
-import Logo from "../../assets/svgs/Logo";
+import Logo from "../assets/svgs/Logo";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-white mt-32">
-      <div className="w-full max-w-[1440px] mx-auto p-4 md:py-8">
+    <footer className="bg-white">
+      <div className="w-full max-w-[1440px] mx-auto p-4 md:py-10">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <a
-            href="https://logicgate.com/"
+          <Link
+            to="https://logicgate.com/"
             className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
             <Logo />
             <span className="self-center text-2xl font-semibold whitespace-nowrap ">
               Logicgate
             </span>
-          </a>
+          </Link>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium  sm:mb-0">
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
+              <Link to="#" className="hover:underline me-4 md:me-6">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
+              <Link to="#" className="hover:underline me-4 md:me-6">
                 Products
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
+              <Link to="#" className="hover:underline me-4 md:me-6">
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link to="#" className="hover:underline">
                 Company
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
         <div className="sm:flex sm:items-start sm:justify-between mt-8">
           <div className="flex gap-4 items-center">
-            <a
-              href="#"
+            <Link
+              to="#"
               className="bg-gray-100 flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary hover:text-white transition-all duration-150"
             >
               <RiFacebookFill className="w-6 h-6" />
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="#"
               className="bg-gray-100 flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary hover:text-white transition-all duration-150"
             >
               <RiLinkedinFill className="w-6 h-6" />
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="#"
               className="bg-gray-100 flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary hover:text-white transition-all duration-150"
             >
               <RiTwitterFill className="w-6 h-6" />
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="#"
               className="bg-gray-100 flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary hover:text-white transition-all duration-150"
             >
               <RiInstagramFill className="w-6 h-6" />
-            </a>
+            </Link>
           </div>
-          <ul className="flex flex-col mt-8 md:0 md:items-end gap-4 max-w-sm md:text-right text-left mb-6 text-sm font-medium  sm:mb-0">
+          <ul className="flex flex-col md:mt-0  mt-8 md:0 md:items-end gap-4 max-w-sm md:text-right text-left mb-6 text-sm  sm:mb-0">
             <li>
               Plot No. 54, Zone-II, Maharana Pratap Nagar, Bhopal, Madhya
               Pradesh 462001
             </li>
             <li className="flex gap-2">
-              <a href="mailto:hr@netmagnetic.com " className="hover:underline">
+              <Link to="mailto:hr@netmagnetic.com " className="hover:underline">
                 hr@netmagnetic.com
-              </a>
+              </Link>
               <span className="hidden sm:inline">|</span>
-              <a href="tel:919893111128" className="hover:underline">
+              <Link to="tel:919893111128" className="hover:underline">
                 +91-9893111128
-              </a>
+              </Link>
             </li>
             <li></li>
           </ul>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-        <span className="block text-sm sm:text-center">
+        <span className="block text-xs sm:text-center mt-4">
           © 2024{" "}
-          <a href="https://logicgate.com/" className="hover:underline">
+          <Link to="https://logicgate.com/" className="hover:underline">
             Logicgate
-          </a>
+          </Link>
           . All Rights Reserved.
         </span>
       </div>

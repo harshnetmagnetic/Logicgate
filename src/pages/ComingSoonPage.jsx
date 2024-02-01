@@ -1,4 +1,4 @@
-function ComingSoon() {
+function ComingSoonPage() {
   return (
     <section className="bg-white">
       <div className="py-8 px-4 mx-auto max-w-[1440px] lg:py-16 lg:px-6 h-[100vh] grid place-content-center">
@@ -12,4 +12,4 @@ function ComingSoon() {
   );
 }
 
-export default ComingSoon;
+export default ComingSoonPage;

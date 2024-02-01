@@ -1,19 +1,25 @@
-import { Routes, Route } from "react-router-dom";
-import Home from "./pages/home/Home";
-import Header from "./components/Navbar/Header";
-import NotFound from "./pages/NotFound";
-import ComingSoon from "./pages/ComingSoon";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
+import HomePage from "./pages/home/HomePage";
+import NotFoundPage from "./pages/NotFoundPage";
+import ServicesPage from "./pages/services/ServicesPage";
+import ComingSoonPage from "./pages/ComingSoonPage";
+import Footer from "./components/Footer";
+import CallToActionSection from "./components/CallToActionSection";
 
 function App() {
   return (
-    <>
+    <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<ComingSoon />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/products" element={<ComingSoonPage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
-    </>
+      <CallToActionSection />
+      <Footer />
+    </Router>
   );
 }
 

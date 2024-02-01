@@ -1,8 +1,9 @@
-import Logo from "../../assets/svgs/Logo";
+import { Link } from "react-router-dom";
+import Logo from "../assets/svgs/Logo";
 
-function SectionCta() {
+function CallToActionSection() {
   return (
-    <section className="bg-gray-50 mt-32">
+    <section className="bg-gray-50 mt-24">
       <div className="relative py-8 px-4 mx-auto max-w-[1440px] sm:py-16 lg:px-6 overflow-hidden">
         <div className="hidden xl:block absolute right-[20%] bottom-[20%] scale-[12]">
           <Logo />
@@ -18,12 +19,12 @@ function SectionCta() {
             providing you with the tools you need to succeed.
           </p>
           <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
-            <a
-              href="#"
+            <Link
+              to="#"
               className="rounded-full bg-primary border border-transparent px-6 py-3  text-md font-semibold text-white shadow-sm hover:border-primary hover:bg-transparent hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition ease-in-out duration-150 active:scale-95"
             >
               Get In Touch
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -31,4 +32,4 @@ function SectionCta() {
   );
 }
 
-export default SectionCta;
+export default CallToActionSection;
