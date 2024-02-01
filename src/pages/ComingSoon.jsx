@@ -1,6 +1,3 @@
-import { ClockIcon } from "@heroicons/react/24/outline";
-import { Ri24HoursLine, RiClockwise2Fill } from "@remixicon/react";
-
 function ComingSoon() {
   return (
     <section className="bg-white">
