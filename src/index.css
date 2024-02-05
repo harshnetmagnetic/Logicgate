@@ -52,3 +52,26 @@
   }
 }
 */
+
+.services-card {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.services-card:hover {
+  transform: scale(1.05);
+}
+
+.services-card img {
+  transform: perspective(1000px);
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.services-card:hover img.left {
+  transform: perspective(1000px) rotateY(-10deg);
+  @apply shadow-2xl;
+}
+
+.services-card:hover img.right {
+  transform: perspective(1000px) rotateY(10deg);
+  @apply shadow-2xl;
+}

@@ -1,4 +1,4 @@
-import Services from "../home/Services";
+import Services from "./Services";
 
 function ServicesPage() {
   return <Services />;

@@ -3,6 +3,7 @@ import servicesImg1 from "../../assets/images/services-img-1.png";
 import servicesImg2 from "../../assets/images/services-img-2.png";
 import servicesImg3 from "../../assets/images/services-img-3.png";
 import { useLocation } from "react-router-dom";
+import ServicesCard from "./ServicesCard";
 
 const servicesCards = [
   {
@@ -50,25 +51,9 @@ function Services() {
       {servicesCards
         .slice(0, location.pathname === "/" ? 3 : servicesCards.length)
         .map((card, index) => (
-          <div
-            key={card.title}
-            className={`gap-8 items-center xl:gap-16 flex justify-between flex-col md:flex-row ${
-              index % 2 === 0 ? "" : "md:flex-row-reverse"
-            }`}
-          >
-            <img
-              className="w-full md:w-1/2"
-              src={card.image}
-              alt="services image"
-            />
-            <div className="p-2">
-              <h2 className="mb-4 text-2xl lg:text-3xl tracking-tight font-semibold">
-                {card.title}{" "}
-              </h2>
-              <p className="mb-6 text-sm lg:text-lg">{card.description}</p>
-            </div>
-          </div>
+          <ServicesCard key={index} index={index} card={card} />
         ))}
+
       {location.pathname === "/" && (
         <div className="flex items-center justify-center gap-x-6 mt-16 md:mt-24">
           <Link

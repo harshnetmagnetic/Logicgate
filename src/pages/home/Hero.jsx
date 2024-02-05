@@ -3,6 +3,7 @@ import heroImage from "../../assets/images/hero-img.png";
 import userImg1 from "../../assets/images/user-img-1.png";
 import userImg2 from "../../assets/images/user-img-2.png";
 import userImg3 from "../../assets/images/user-img-3.png";
+import { RiArrowRightSLine } from "@remixicon/react";
 
 export default function Hero() {
   return (
@@ -33,7 +34,7 @@ export default function Hero() {
                 aria-hidden="true"
                 className=" group-hover:translate-x-2 block transition-all trasulate-x-0 ease-in-out duration-150"
               >
-                →
+                <RiArrowRightSLine />
               </span>
             </Link>
           </div>

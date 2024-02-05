@@ -12,7 +12,7 @@ const navigation = [
   { name: "Home", to: "/" },
   { name: "Products", to: "/products" },
   { name: "Services", to: "/services" },
-  { name: "Announcements", to: "/announcements" },
+  { name: "Contact", to: "/contact" },
   { name: "Company", to: "/company" },
 ];
 

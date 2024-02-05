@@ -3,9 +3,10 @@ import Header from "./components/Header/Header";
 import HomePage from "./pages/home/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
 import ServicesPage from "./pages/services/ServicesPage";
-import ComingSoonPage from "./pages/ComingSoonPage";
 import Footer from "./components/Footer";
 import CallToActionSection from "./components/CallToActionSection";
+import ProductsPage from "./pages/products/ProductsPage";
+import ContactPage from "./pages/contact/ContactPage";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/products" element={<ComingSoonPage />} />
+        <Route path="/products" element={<ProductsPage />} />
         <Route path="/services" element={<ServicesPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <CallToActionSection />

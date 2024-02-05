@@ -45,29 +45,27 @@ function Testimonials() {
         </div>
         <div className="grid mb-8 lg:mb-12 lg:grid-cols-2 gap-2">
           {testimonials.map((testimonial) => (
-            <>
-              <figure
-                key={testimonial.id}
-                className="flex flex-col p-8 items-start text-left border justify-between rounded-xl min-h-72 hover:bg-gray-50 border-gray-200 md:p-12 transition-all duration-150"
-              >
-                <blockquote className="mx-auto mb-8 lg:max-w-2xl ">
-                  <p className="my-4">{testimonial.desc}</p>
-                </blockquote>
-                <figcaption className="flex items-center space-x-3">
-                  <img
-                    className="w-9 h-9 rounded-full"
-                    src={testimonial.img}
-                    alt="profile picture"
-                  />
-                  <div className="space-y-0.5 font-xs text-left">
-                    <div className="font-semibold">{testimonial.name}</div>
-                    <div className="text-xs">
-                      {testimonial.title} at {testimonial.org}
-                    </div>
+            <figure
+              key={testimonial.title}
+              className="flex flex-col p-8 items-start text-left border justify-between rounded-xl min-h-72 hover:bg-gray-50 border-gray-200 md:p-12 transition-all duration-150"
+            >
+              <blockquote className="mx-auto mb-8 lg:max-w-2xl ">
+                <p className="my-4">{testimonial.desc}</p>
+              </blockquote>
+              <figcaption className="flex items-center space-x-3">
+                <img
+                  className="w-9 h-9 rounded-full"
+                  src={testimonial.img}
+                  alt="profile picture"
+                />
+                <div className="space-y-0.5 font-xs text-left">
+                  <div className="font-semibold">{testimonial.name}</div>
+                  <div className="text-xs">
+                    {testimonial.title} at {testimonial.org}
                   </div>
-                </figcaption>
-              </figure>
-            </>
+                </div>
+              </figcaption>
+            </figure>
           ))}
         </div>
       </div>

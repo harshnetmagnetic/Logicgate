@@ -1,7 +1,7 @@
 import Clients from "./Clients";
 import Hero from "./Hero";
 import ChooseUs from "./ChooseUs";
-import Services from "./Services";
+import Services from "../services/Services";
 import Testimonials from "./Testimonials";
 
 function HomePage() {
