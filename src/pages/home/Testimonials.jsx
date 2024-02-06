@@ -35,7 +35,7 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <section className="bg-white mt-24">
+    <section className="bg-white mt-32">
       <div className="py-8 px-4 mx-auto max-w-[1440px] text-left lg:py-16 lg:px-6">
         <div className="flex flex-col gap-6 mb-8">
           <div className="bg-primary h-1 w-12"></div>

@@ -8,7 +8,7 @@ import { RiArrowRightSLine } from "@remixicon/react";
 export default function Hero() {
   return (
     <div className="bg-white max-w-[1440px] mx-auto">
-      <div className="relative isolate flex justify-between md:flex-row flex-col px-6 gap-12 pt-32 md:pt-40 lg:px-8">
+      <div className="relative isolate flex justify-between md:flex-row flex-col px-6 gap-12 mt-24 md:mt-36 lg:px-8">
         <div className="text-left flex flex-col gap-6 items-start">
           <div className="bg-primary h-1 w-12"></div>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight lg:text-6xl">

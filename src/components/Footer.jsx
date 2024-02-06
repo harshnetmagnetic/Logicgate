@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-white">
-      <div className="w-full max-w-[1440px] mx-auto p-4 md:py-10">
+    <footer className="bg-white mt-32">
+      <div className="w-full max-w-[1440px] mx-auto py-6 px-3 md:py-10 border-t">
         <div className="sm:flex sm:items-center sm:justify-between">
           <Link
             to="https://logicgate.com/"

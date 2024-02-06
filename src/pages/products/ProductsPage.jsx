@@ -28,7 +28,7 @@ const productsCards = [
 function ProductsPage() {
   return (
     <>
-      <section className="bg-white mt-24 flex flex-col gap-8 mx-auto max-w-[1440px] py-8 px-4 sm:py-16 lg:px-8">
+      <section className="bg-white mt-32 flex flex-col gap-8 mx-auto max-w-[1440px] px-4  lg:px-8">
         <div className="flex flex-col gap-6">
           <div className="bg-primary h-1 w-12"></div>
           <h2 className="text-3xl font-bold sm:text-4xl">
