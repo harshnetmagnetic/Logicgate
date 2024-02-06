@@ -4,6 +4,7 @@ import servicesImg2 from "../../assets/images/services-img-2.png";
 import servicesImg3 from "../../assets/images/services-img-3.png";
 import { useLocation } from "react-router-dom";
 import ServicesCard from "./ServicesCard";
+import { RiArrowRightSLine } from "@remixicon/react";
 
 const servicesCards = [
   {
@@ -71,7 +72,7 @@ function Services() {
               aria-hidden="true"
               className=" group-hover:translate-x-2 block transition-all trasulate-x-0 ease-in-out duration-150"
             >
-              →
+              <RiArrowRightSLine />
             </span>
           </Link>
         </div>
