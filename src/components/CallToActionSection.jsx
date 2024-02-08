@@ -3,7 +3,7 @@ import Logo from "../assets/svgs/Logo";
 
 function CallToActionSection() {
   return (
-    <section className="bg-gray-50 mt-32">
+    <section className="bg-gray-50 mt-24">
       <div className="relative py-10 px-4 mx-auto max-w-[1440px] lg:px-6 overflow-hidden">
         <div className="hidden xl:block absolute right-[20%] bottom-[16%] scale-[12]">
           <Logo />

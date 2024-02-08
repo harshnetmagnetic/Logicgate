@@ -79,7 +79,7 @@ export default function Hero() {
             <img
               src={heroImage}
               alt="Hero Image"
-              className="w-full h-full object-cover object-center "
+              className="w-full h-full object-cover object-center rounded-2xl"
             />
             <div className="hero-img-message absolute bottom-8 left-8  md:top-12 md:left-8 flex flex-col gap-4">
               <span className="flex items-center bg-white rounded-full px-4 py-2 lg:px-6 shadow-xl">

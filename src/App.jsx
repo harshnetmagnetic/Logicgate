@@ -5,7 +5,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import ServicesPage from "./pages/services/ServicesPage";
 import Footer from "./components/Footer";
 import CallToActionSection from "./components/CallToActionSection";
-import ProductsPage from "./pages/products/ProductsPage";
+// import ProductsPage from "./pages/products/ProductsPage";
 import ContactPage from "./pages/contact/ContactPage";
 import CompanyPage from "./pages/company/CompanyPage";
 import ComingSoonPage from "./pages/ComingSoonPage";
