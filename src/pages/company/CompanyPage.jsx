@@ -1,4 +1,4 @@
-import Team from "./Team";
+// import Team from "./Team";
 import Story from "./Story";
 import Quote from "./Quote";
 import CompanyInfo from "./CompanyInfo";
@@ -9,7 +9,7 @@ function CompanyPage() {
       <CompanyInfo />
       <Quote />
       <Story />
-      <Team />
+      {/* <Team /> */}
     </section>
   );
 }

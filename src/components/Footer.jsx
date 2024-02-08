@@ -18,14 +18,14 @@ function Footer() {
           </Link>
           <span className="block text-xs sm:text-center mt-4">
             © 2024{" "}
-            <Link to="https://logicgate.com/" className="hover:underline">
+            <Link to="https://ailogicgate.com/" className="hover:underline">
               Ailogicgate
             </Link>
             . All Rights Reserved.
           </span>
           <div className="flex gap-4 items-center">
             <Link
-              to="#"
+              to="https://www.linkedin.com/company/ai-tech-logicgate/"
               className="bg-gray-100 flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary hover:text-white transition-all duration-150"
               target="_blank"
               rel="noreferrer"
@@ -33,7 +33,7 @@ function Footer() {
               <RiLinkedinFill className="w-6 h-6" />
             </Link>
             <Link
-              to="mailto:info@ailogicgate.com "
+              to="mailto:info@ailogicgate.com"
               className="bg-gray-100 flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary hover:text-white transition-all duration-150"
               target="_blank"
               rel="noreferrer"

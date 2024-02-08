@@ -20,13 +20,13 @@ export default function Hero() {
           </p>
           <div className="flex items-center justify-center gap-x-6">
             <Link
-              to="#"
+              to="/contact"
               className="rounded-full bg-primary border border-transparent px-6 py-3  text-md font-semibold text-white shadow-sm hover:border-primary hover:bg-transparent hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition ease-in-out duration-150 active:scale-95"
             >
               Get In Touch
             </Link>
             <Link
-              to="#"
+              to="/company"
               className="text-sm font-semibold leading-6 group flex gap-2 hover:text-primary transition ease-in-out duration-150"
             >
               Know more{" "}

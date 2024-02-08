@@ -17,9 +17,10 @@ function CompanyInfo() {
                 Welcome to Logicgate
               </h2>
               <p className="max-w-3xl text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-                officiis porro quas magnam ullam corporis earum beatae atque
-                aliquam iste.
+                The leading provider of innovative solutions for your business
+                needs. Whether you need a stunning applications, a user-friendly
+                app, or a reliable support team, we have the expertise and
+                experience to deliver.
               </p>
             </div>
 

@@ -1,4 +1,5 @@
-import { RiMailFill, RiPhoneFill } from "@remixicon/react";
+import { RiMailFill } from "@remixicon/react";
+import { Link } from "react-router-dom";
 
 function ContactInfo() {
   return (
@@ -16,30 +17,16 @@ function ContactInfo() {
           <div className="flex flex-col mt-12">
             <div className="mb-8 flex w-full max-w-[370px]">
               <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded-full bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
-                <RiPhoneFill size={32} />
-              </div>
-              <div className="w-full">
-                <h4 className="mb-1 text-lg font-bold text-dark ">
-                  Phone Number
-                </h4>
-                <p className="text-base text-body-color dark:text-dark-6">
-                  (+62)81 414 257 9980
-                </p>
-              </div>
-            </div>
-
-            <div className="mb-8 flex w-full max-w-[370px]">
-              <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded-full bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
                 <RiMailFill size={32} />
               </div>
-              <div className="w-full">
+              <Link to="mailto:info@ailogicgate.com" className="w-full">
                 <h4 className="mb-1 text-lg font-bold text-dark ">
                   Email Address
                 </h4>
                 <p className="text-base text-body-color dark:text-dark-6">
-                  info@yourdomain.com
+                  info@ailogicgate.com
                 </p>
-              </div>
+              </Link>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4 mt-16 w-full">

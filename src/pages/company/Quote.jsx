@@ -50,10 +50,11 @@ function Quote() {
           </svg>
         </div>
         <blockquote>
-          <p className="text-2xl font-medium">
-            “Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            maxime nesciunt nostrum quia culpa fugit vel aliquam ipsum pariatur
-            modi”
+          <p className="text-xl font-medium">
+            “Logicgate is more than just a service provider, they are a trusted
+            partner and a valuable asset to our business. I highly recommend
+            them to anyone looking for a reliable and talented web development
+            team. Thank you, for your excellent!”
           </p>
         </blockquote>
         <figcaption className="flex items-center mt-6 space-x-3 rtl:space-x-reverse">
