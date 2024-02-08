@@ -30,7 +30,7 @@ function Header() {
           >
             <div className="flex lg:flex-1">
               <Link
-                to="/"
+                to="https://ailogicgate.com/"
                 className="-m-1.5 p-1.5 flex gap-4 items-center font-medium"
               >
                 <Logo />

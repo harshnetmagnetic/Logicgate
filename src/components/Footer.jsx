@@ -8,7 +8,7 @@ function Footer() {
       <div className="w-full max-w-[1440px] mx-auto py-6 px-3 md:py-10">
         <div className="sm:flex sm:items-center sm:justify-between">
           <Link
-            to="https://logicgate.com/"
+            to="https://ailogicgate.com/"
             className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
             <Logo />
