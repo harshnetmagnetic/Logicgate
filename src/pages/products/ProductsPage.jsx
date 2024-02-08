@@ -1,7 +1,9 @@
-import products1Img1 from "../../assets/images/services-img-1.png";
-import products1Img2 from "../../assets/images/services-img-2.png";
-import products1Img3 from "../../assets/images/services-img-3.png";
-import products1Img4 from "../../assets/images/services-img-3.png";
+import products1Img1 from "../../assets/images/services-img-1.jpg";
+import products1Img2 from "../../assets/images/services-img-2.jpg";
+import products1Img3 from "../../assets/images/services-img-3.jpg";
+import products1Img4 from "../../assets/images/services-img-4.jpg";
+import products1Img5 from "../../assets/images/services-img-5.jpg";
+import products1Img6 from "../../assets/images/services-img-6.jpg";
 import Product from "./Product";
 
 const productsCards = [
@@ -9,7 +11,14 @@ const productsCards = [
     title: "POS System",
     description:
       "Our team of experienced designers and developers offer comprehensive social media management services to help you build a strong online presence.",
-    images: [products1Img1, products1Img2, products1Img3, products1Img4],
+    images: [
+      products1Img1,
+      products1Img2,
+      products1Img3,
+      products1Img4,
+      products1Img5,
+      products1Img6,
+    ],
     link: "www.google.com",
     reviews: 1209,
     viewLink: "www.google.com",
@@ -18,7 +27,14 @@ const productsCards = [
     title: "POS System",
     description:
       "Our team of experienced designers and developers offer comprehensive social media management services to help you build a strong online presence.",
-    images: [products1Img1, products1Img2, products1Img3, products1Img4],
+    images: [
+      products1Img1,
+      products1Img2,
+      products1Img3,
+      products1Img4,
+      products1Img5,
+      products1Img6,
+    ],
     link: "www.google.com",
     reviews: 1209,
     viewLink: "www.google.com",

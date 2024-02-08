@@ -1,35 +1,50 @@
 import { Link } from "react-router-dom";
-import servicesImg1 from "../../assets/images/services-img-1.png";
-import servicesImg2 from "../../assets/images/services-img-2.png";
-import servicesImg3 from "../../assets/images/services-img-3.png";
+import servicesImg1 from "../../assets/images/services-img-1.jpg";
+import servicesImg2 from "../../assets/images/services-img-2.jpg";
+import servicesImg3 from "../../assets/images/services-img-3.jpg";
+import servicesImg4 from "../../assets/images/services-img-4.jpg";
+import servicesImg5 from "../../assets/images/services-img-5.jpg";
+import servicesImg6 from "../../assets/images/services-img-6.jpg";
 import { useLocation } from "react-router-dom";
 import ServicesCard from "./ServicesCard";
 import { RiArrowRightSLine } from "@remixicon/react";
 
 const servicesCards = [
   {
-    title: "Social Media Management",
+    title: "Mobile Application Development",
     description:
-      "Our team of experienced designers and developers offer comprehensive social media management services to help you build a strong online presence.",
+      "As a dedicated Mobile Apps Development Company, we have a dedicated team of experts to develop scalable & custom mobile apps for your business.",
     image: servicesImg1,
   },
   {
-    title: "Website Design and Development",
+    title: "Web Application Development",
     description:
-      "Our team of experienced designers and developers can create a custom website tailored to your business needs.",
+      "We offer a bespoke Web Application Development solution based on the customer’s needs and business objectives.",
     image: servicesImg2,
   },
   {
-    title: "Website Maintenance and Support",
+    title: "Cloud Services",
     description:
-      "Our team of experts is dedicated to providing you with the best Website Maintenance and Support service possible. We offer a range of services to keep your website running smoothly.",
+      "We deliver high-quality Cloud Service to manage efficiently and optimize business outcomes.",
     image: servicesImg3,
   },
   {
-    title: "Search Engine Optimization",
+    title: "Web Application Development",
     description:
-      "Our team of experts is dedicated to providing you with the best Search Engine Optimization service possible. We offer a range of services to keep your website running smoothly.",
-    image: servicesImg1,
+      "We offer a bespoke Web Application Development solution based on the customer’s needs and business objectives.",
+    image: servicesImg4,
+  },
+  {
+    title: "Website Development",
+    description:
+      "We are a full-service website development firm that assists the client in setting up a strong and attractive website. We provide high-quality websites.",
+    image: servicesImg5,
+  },
+  {
+    title: "AI and Machine Learning Services",
+    description:
+      "Our AI and Machine Learning services streamline processes and provide end-to-end solutions that improve the customer experience.",
+    image: servicesImg6,
   },
 ];
 

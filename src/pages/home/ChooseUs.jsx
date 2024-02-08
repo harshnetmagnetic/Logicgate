@@ -1,11 +1,11 @@
 import {
-  ClockIcon,
-  CodeBracketSquareIcon,
-  CubeTransparentIcon,
-  CurrencyDollarIcon,
-  ShieldCheckIcon,
-  UserGroupIcon,
-} from "@heroicons/react/24/outline";
+  RiCodeBoxFill,
+  RiTimeFill,
+  RiInstanceFill,
+  RiGroupFill,
+  RiCurrencyFill,
+  RiShieldUserFill,
+} from "@remixicon/react";
 
 import { useState } from "react";
 
@@ -14,37 +14,37 @@ const chooseUsCards = [
     name: "Latest Web Technologies",
     description:
       "We stay up-to-date with the latest web technologies to provide you with the best possible solutions.",
-    icon: CodeBracketSquareIcon,
+    icon: RiCodeBoxFill,
   },
   {
     name: "Project Management",
     description:
       "We ensure that you receive regular updates and that your project is completed on time and within budget.",
-    icon: ClockIcon,
+    icon: RiTimeFill,
   },
   {
     name: "Customized Solutions",
     description:
       "We work closely with you to develop customized solutions that meet your unique business needs.",
-    icon: CubeTransparentIcon,
+    icon: RiInstanceFill,
   },
   {
     name: "Leading Industry Vendors",
     description:
       "We work with the best vendors in the industry to provide you with the highest quality products and services.",
-    icon: UserGroupIcon,
+    icon: RiGroupFill,
   },
   {
     name: "Cost-Effective Pricing",
     description:
       "We offer transparent and affordable pricing that is designed to maximize your return on investment.",
-    icon: CurrencyDollarIcon,
+    icon: RiCurrencyFill,
   },
   {
     name: "Security and Data Privacy",
     description:
       "We take your privacy seriously and have implemented security measures to ensure that your data is safe.",
-    icon: ShieldCheckIcon,
+    icon: RiShieldUserFill,
   },
 ];
 

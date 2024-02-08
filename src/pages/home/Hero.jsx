@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import heroImage from "../../assets/images/hero-img.png";
-import userImg1 from "../../assets/images/user-img-1.png";
-import userImg2 from "../../assets/images/user-img-2.png";
-import userImg3 from "../../assets/images/user-img-3.png";
+import heroImage from "../../assets/images/hero-img.jpg";
+import userImg1 from "../../assets/images/user-img-1.jpg";
+import userImg2 from "../../assets/images/user-img-2.jpg";
+import userImg3 from "../../assets/images/user-img-3.jpg";
 import { RiArrowRightSLine } from "@remixicon/react";
 
 export default function Hero() {

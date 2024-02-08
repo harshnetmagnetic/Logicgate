@@ -1,3 +1,8 @@
+import clientImg1 from "../../assets/images/client-img-1-lg.png";
+import clientImg2 from "../../assets/images/client-img-2-lg.png";
+import clientImg3 from "../../assets/images/client-img-3-lg.png";
+import clientImg4 from "../../assets/images/client-img-4-lg.png";
+
 function Clients() {
   return (
     <div className="bg-white mt-32">
@@ -15,33 +20,17 @@ function Clients() {
             </p>
           </div>
           <div className="mt-12 grid grid-cols-2 gap-1 md:grid-cols-3 lg:mt-0 lg:grid-cols-4">
-            <div className="col-span-1 flex justify-center py-8 px-8 rounded-lg bg-gray-50 hover:bg-gray-100 transition-all">
-              <img
-                className="max-h-12"
-                src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
-                alt="Tuple"
-              />
+            <div className="col-span-1 flex justify-center items-center py-8 px-8 rounded-lg grayscale hover:grayscale-0 bg-gray-50  hover:bg-gray-100 transition-all">
+              <img className="max-h-12" src={clientImg1} alt="Tuple" />
             </div>
-            <div className="col-span-1 flex justify-center py-8 px-8 rounded-lg bg-gray-50 hover:bg-gray-100 transition-all">
-              <img
-                className="max-h-12"
-                src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
-                alt="Mirage"
-              />
+            <div className="col-span-1 flex items-center justify-center py-8 px-8 rounded-lg grayscale hover:grayscale-0 bg-gray-50 hover:bg-gray-100 transition-all">
+              <img className="max-h-20" src={clientImg2} alt="Mirage" />
             </div>
-            <div className="col-span-1 flex justify-center py-8 px-8 rounded-lg bg-gray-50 hover:bg-gray-100 transition-all">
-              <img
-                className="max-h-12"
-                src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
-                alt="StaticKit"
-              />
+            <div className="col-span-1 flex items-center justify-center py-8 px-8 rounded-lg grayscale hover:grayscale-0 bg-gray-50 hover:bg-gray-100 transition-all">
+              <img className="max-h-12" src={clientImg3} alt="StaticKit" />
             </div>
-            <div className="col-span-1 flex justify-center py-8 px-8 rounded-lg bg-gray-50 hover:bg-gray-100 transition-all">
-              <img
-                className="max-h-12"
-                src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-                alt="Transistor"
-              />
+            <div className="col-span-1 flex items-center justify-center py-8 px-8 rounded-lg grayscale hover:grayscale-0 bg-gray-50 hover:bg-gray-100 transition-all">
+              <img className="max-h-16" src={clientImg4} alt="Transistor" />
             </div>
           </div>
         </div>
