@@ -5,6 +5,8 @@ import {
   RiShakeHandsFill,
 } from "@remixicon/react";
 
+import servicesImg2 from "../../assets/images/services-img-2.jpg";
+
 function CompanyInfo() {
   return (
     <>
@@ -70,8 +72,7 @@ function CompanyInfo() {
         </div>
         <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
           <img
-            src="https://i.postimg.cc/9MW8G96J/pexels-the-coach-space-2977565.jpg"
-            alt=""
+            src={servicesImg2}
             className="relative z-40 object-cover w-full h-full rounded-2xl"
           />
         </div>

@@ -20,10 +20,10 @@ function Story() {
                 offer affordable, fast, and high-quality solutions. They named
                 it Logicgate to express their passion for logic and innovation.
                 They grew their team and services, using the latest technologies
-                and tools. They worked on various projects and industries,
-                gaining reputation and recognition. Logicgate is now one of the
-                leading web application companies in India, with a mission to
-                create value through web development.
+                and tools. We worked on various projects and industries, gaining
+                reputation and recognition. Logicgate is now one of the leading
+                web application companies in India, with a mission to create
+                value through web development.
               </p>
             </div>
             {/* End Col */}

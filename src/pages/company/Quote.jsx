@@ -1,3 +1,5 @@
+import userImg5 from "../../assets/images/user-img-5.jpg";
+
 function Quote() {
   return (
     <>
@@ -58,14 +60,10 @@ function Quote() {
           </p>
         </blockquote>
         <figcaption className="flex items-center mt-6 space-x-3 rtl:space-x-reverse">
-          <img
-            className="w-6 h-6 rounded-full"
-            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
-            alt="profile picture"
-          />
+          <img className="w-6 h-6 rounded-full object-cover" src={userImg5} />
           <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300 dark:divide-gray-700">
-            <cite className="pe-3 font-medium ">Gandalf the Grey</cite>
-            <cite className="ps-3 text-sm text-gray-600 ">CEO, Logicgate</cite>
+            <cite className="pe-3 font-medium ">Clark Thorton</cite>
+            <cite className="ps-3 text-sm text-gray-600 ">Founder & CEO</cite>
           </div>
         </figcaption>
       </figure>

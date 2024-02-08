@@ -1,32 +1,32 @@
-import clientImg1 from "../../assets/images/client-img-1.png";
-import clientImg2 from "../../assets/images/client-img-2.png";
-import clientImg3 from "../../assets/images/client-img-3.png";
-import clientImg4 from "../../assets/images/client-img-4.png";
+import userImg1 from "../../assets/images/user-img-1.jpg";
+import userImg2 from "../../assets/images/user-img-2.jpg";
+import userImg3 from "../../assets/images/user-img-3.jpg";
+import userImg4 from "../../assets/images/user-img-4.jpg";
 
 const testimonials = [
   {
     id: 1,
-    name: "Arch Steel",
+    name: "Nathan F. ",
     desc: "I have been thoroughly impressed by them. Great service and great results. I would highly recommend them to anyone.",
-    img: clientImg1,
+    img: userImg1,
   },
   {
     id: 2,
-    name: "Total Interiors",
+    name: "Charlie Moi",
     desc: "Working with this logicgate for several years now and I am extremely satisfied.",
-    img: clientImg2,
+    img: userImg3,
   },
   {
     id: 3,
-    name: "Nootric",
+    name: "jenny Rose",
     desc: "What a great service! Great product, great team and great results. I would highly recommend.",
-    img: clientImg3,
+    img: userImg2,
   },
   {
     id: 4,
-    name: "PROED",
+    name: "Ronit sharma",
     desc: "We hired them to build a application and they did an excellent job. They were very professional and the application was exactly what I wanted.",
-    img: clientImg4,
+    img: userImg4,
   },
 ];
 
@@ -37,7 +37,7 @@ function Testimonials() {
         <div className="flex flex-col gap-6 mb-8">
           <div className="bg-primary h-1 w-12"></div>
           <h2 className="mb-4 text-4xl tracking-tight max-w-xl font-bold">
-            What top companies are saying about us?
+            What our clients are saying about us
           </h2>
         </div>
         <div className="grid mb-8 lg:mb-12 lg:grid-cols-2 gap-2">
@@ -51,7 +51,7 @@ function Testimonials() {
               </blockquote>
               <figcaption className="flex items-center space-x-3">
                 <img
-                  className="w-9 h-9 rounded-full"
+                  className="w-9 h-9 rounded-full object-cover"
                   src={testimonial.img}
                   alt="profile picture"
                 />

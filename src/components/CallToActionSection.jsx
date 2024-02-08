@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/svgs/Logo";
+import { useLocation } from "react-router-dom";
 
 function CallToActionSection() {
+  const location = useLocation();
+
+  if (location.pathname === "/contact")
+    return <section className="bg-gray-50 mt-24"></section>;
+
   return (
     <section className="bg-gray-50 mt-24">
       <div className="relative py-10 px-4 mx-auto max-w-[1440px] lg:px-6 overflow-hidden">
