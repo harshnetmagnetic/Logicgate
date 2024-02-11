@@ -8,6 +8,10 @@ import servicesImg6 from "../../assets/images/services-img-6.jpg";
 import { useLocation } from "react-router-dom";
 import ServicesCard from "./ServicesCard";
 import { RiArrowRightSLine } from "@remixicon/react";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import SectionHeader from "../../components/SectionHeader";
+import { fadeInUp } from "../../animations/animation";
 
 const servicesCards = [
   {
@@ -50,48 +54,51 @@ const servicesCards = [
 
 function Services() {
   const location = useLocation();
+  const sectionRef = useRef(null);
+  const sectionInView = useInView(sectionRef);
   return (
-    <section className="bg-white mt-32 flex flex-col gap-8 mx-auto max-w-[1440px] px-4  lg:px-8">
-      <div className="flex flex-col gap-6 mb-4">
-        <div className="bg-primary h-1 w-12"></div>
-        <h2 className="text-3xl font-bold sm:text-4xl">
-          We Just Offer The Best Services
-        </h2>
-        <p className="max-w-3xl text-lg">
-          Our team of experts is committed to providing you with the best
-          services that cater to your unique needs. Whether you need , we have
-          the expertise to deliver the results you need.
-        </p>
-      </div>
+    <section
+      ref={sectionRef}
+      className="bg-white mt-32 flex flex-col gap-8 mx-auto max-w-[1440px] px-4  lg:px-8"
+    >
+      <motion.div
+        variants={fadeInUp}
+        animate={sectionInView ? "show" : "hidden"}
+      >
+        <SectionHeader
+          title="We Just Offer The Best Services"
+          description="Our team of experts is committed to providing you with the best services that cater to your unique needs. Whether you need , we have the expertise to deliver the results you need."
+        />
 
-      {servicesCards
-        .slice(0, location.pathname === "/" ? 3 : servicesCards.length)
-        .map((card, index) => (
-          <ServicesCard key={index} index={index} card={card} />
-        ))}
+        {servicesCards
+          .slice(0, location.pathname === "/" ? 3 : servicesCards.length)
+          .map((card, index) => (
+            <ServicesCard key={index} index={index} card={card} />
+          ))}
 
-      {location.pathname === "/" && (
-        <div className="flex items-center justify-center gap-x-6 mt-16 md:mt-32">
-          <Link
-            to="/contact"
-            className="rounded-full bg-primary border border-transparent px-6 py-3  text-md font-semibold text-white shadow-sm hover:border-primary hover:bg-transparent hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition ease-in-out duration-150 active:scale-95"
-          >
-            Get In Touch
-          </Link>
-          <Link
-            to="/services"
-            className="text-sm font-semibold leading-6 group flex gap-2 hover:text-primary transition ease-in-out duration-150"
-          >
-            See more{" "}
-            <span
-              aria-hidden="true"
-              className=" group-hover:translate-x-2 block transition-all trasulate-x-0 ease-in-out duration-150"
+        {location.pathname === "/" && (
+          <div className="flex items-center justify-center gap-x-6 mt-16 md:mt-32">
+            <Link
+              to="/contact"
+              className="rounded-full bg-primary border border-transparent px-6 py-3  text-md font-semibold text-white shadow-sm hover:border-primary hover:bg-transparent hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition ease-in-out duration-150 active:scale-95"
             >
-              <RiArrowRightSLine />
-            </span>
-          </Link>
-        </div>
-      )}
+              Get In Touch
+            </Link>
+            <Link
+              to="/services"
+              className="text-sm font-semibold leading-6 group flex gap-2 hover:text-primary transition ease-in-out duration-150"
+            >
+              See more{" "}
+              <span
+                aria-hidden="true"
+                className=" group-hover:translate-x-2 block transition-all trasulate-x-0 ease-in-out duration-150"
+              >
+                <RiArrowRightSLine />
+              </span>
+            </Link>
+          </div>
+        )}
+      </motion.div>
     </section>
   );
 }

@@ -7,6 +7,8 @@ import {
 } from "@heroicons/react/24/outline";
 import Logo from "../../assets/svgs/Logo";
 import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
+import { fadeInDown, fadeInUp } from "../../animations/animation";
 
 const navigation = [
   { name: "Home", to: "/" },
@@ -22,19 +24,26 @@ function Header() {
 
   return (
     <>
-      <header className="header absolute inset-x-0 top-0 z-50">
-        <div className="bg-white bg-opacity-70 backdrop-blur-sm fixed inset-x-0 top-0">
+      <header className="header absolute inset-x-0 top-0 z-50 overflow-hidden">
+        <motion.div
+          variants={fadeInDown}
+          initial="hidden"
+          animate="show"
+          className="bg-white bg-opacity-70 backdrop-blur-sm fixed inset-x-0 top-0"
+        >
           <nav
-            className=" flex items-center justify-between px-8 py-4 max-w-[1440px] mx-auto"
+            className=" flex items-center justify-between px-8 py-4 max-w-[1440px] mx-auto overflow-hidden"
             aria-label="Global"
           >
-            <div className="flex lg:flex-1">
+            <div className="flex lg:flex-1 ">
               <Link
                 to="https://ailogicgate.com/"
                 className="-m-1.5 p-1.5 flex gap-4 items-center font-medium"
               >
-                <Logo />
-                <span>Logicgate</span>
+                <motion.div variants={fadeInDown}>
+                  <Logo />
+                </motion.div>
+                <motion.span variants={fadeInDown}>Logicgate</motion.span>
               </Link>
             </div>
             <div className="flex lg:hidden">
@@ -48,25 +57,26 @@ function Header() {
             </div>
             <div className="hidden lg:flex lg:gap-x-8">
               {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.to}
-                  className={`group relative
+                <motion.div variants={fadeInDown} key={item.name}>
+                  <Link
+                    to={item.to}
+                    className={`group relative
                   ${location.pathname === item.to ? "text-primary" : ""}
                   text-sm font-medium leading-6 hover:text-primary
                   `}
-                >
-                  {item.name}
-                  <span
-                    className={`absolute left-0 -bottom-1 h-0.5 bg-primary transition-width duration-300 ease-in-out group-hover:w-[100%] ${
-                      location.pathname === item.to ? "w-full" : "w-0"
-                    }`}
-                  ></span>
-                </Link>
+                  >
+                    {item.name}
+                    <span
+                      className={`absolute left-0 -bottom-1 h-[1px] bg-primary transition-width duration-300 ease-in-out group-hover:w-[100%] ${
+                        location.pathname === item.to ? "w-full" : "w-0"
+                      }`}
+                    ></span>
+                  </Link>
+                </motion.div>
               ))}
             </div>
           </nav>
-        </div>
+        </motion.div>
         <Dialog
           as="div"
           className="lg:hidden"

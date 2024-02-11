@@ -13,24 +13,24 @@
     @apply text-secondary bg-white;
   }
 }
-/*
-.hero-img {
-  transform-style: preserve-3d;
+/* 
+  .hero-img {
+    transform-style: preserve-3d; */
 
-  transition: transform 0.5s;
-  animation: rotateImg 12s linear infinite alternate;
-}
+/* transition: transform 0.5s; */
+/* animation: rotateImg 8s linear infinite alternate; */
+/* } */
 
-.hero-img:hover {
-  /~ transform: rotate3d(0.5, 1, 0, 30deg); ~/
-}
+/* .hero-img:hover {
+  transform: rotate3d(0.5, 1, 0, 30deg);
+} */
 
-.hero-img .hero-img-message {
+/* .hero-img .hero-img-message {
   transform-style: preserve-3d;
 }
 
 .hero-img .hero-img-message span {
-  transform: translate3d(0px, 0px, 30px);
+  transform: translate3d(0px, 0px, 40px);
 }
 
 .hero-img .hero-img-message img {
@@ -50,15 +50,10 @@
   100% {
     transform: rotate3d(1, -0.5, 0, -15deg);
   }
-}
-*/
+} */
 
 .services-card {
   @apply transition-all duration-300 ease-in-out;
-}
-
-.services-card:hover {
-  transform: scale(1.05);
 }
 
 .services-card img {
@@ -66,12 +61,12 @@
   @apply transition-all duration-300 ease-in-out;
 }
 
-.services-card:hover img.left {
+.services-card.services-card-inview img.left {
   transform: perspective(1000px) rotateY(-10deg);
   @apply shadow-2xl;
 }
 
-.services-card:hover img.right {
+.services-card.services-card-inview img.right {
   transform: perspective(1000px) rotateY(10deg);
   @apply shadow-2xl;
 }

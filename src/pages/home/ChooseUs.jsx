@@ -8,6 +8,10 @@ import {
 } from "@remixicon/react";
 
 import { useState } from "react";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import { fadeIn, fadeInUp } from "../../animations/animation";
+import SectionHeader from "../../components/SectionHeader";
 
 const chooseUsCards = [
   {
@@ -51,56 +55,61 @@ const chooseUsCards = [
 function ChooseUs() {
   const [hoveredCard, setHoveredCard] = useState(null);
   const [anyCardHovered, setAnyCardHovered] = useState(false);
+  const sectionRef = useRef(null);
+  const sectionInView = useInView(sectionRef);
 
   return (
-    <div className="bg-white mt-32">
-      <div className="max-w-[1440px] mx-auto py-16 px-4 sm:px-6 lg:px-8">
+    <div ref={sectionRef} className="bg-white mt-32">
+      <motion.div
+        variants={fadeInUp}
+        animate={sectionInView ? "show" : "hidden"}
+        initial="hidden"
+        className="max-w-[1440px] mx-auto py-16 px-4 sm:px-6 lg:px-8"
+      >
         <div className="lg:grid lg:gap-8 lg:items-center">
-          <div className="flex flex-col gap-6">
-            <div className="bg-primary h-1 w-12"></div>
-            <h2 className="text-3xl font-bold sm:text-4xl">
-              Why We Are Best From Others?
-            </h2>
-            <p className="max-w-3xl text-lg">
-              We take pride in the quality of our work and are choose us for all
-              of your services needs and experience the difference that our
-              expertise and commitment to quality can make.
-            </p>
-          </div>
-          <div className="mt-12 grid grid-cols-1 gap-2 md:grid-cols-2 lg:mt-0 lg:grid-cols-3">
+          <SectionHeader
+            title="Why Choose Us?"
+            description="We are committed to providing you with the best possible solutions for your business. Our experience and expertise will ensure that you receive the best possible service."
+          />
+
+          <motion.div
+            variants={fadeIn}
+            className="mt-12 grid grid-cols-1 gap-2 md:grid-cols-2 lg:mt-0 lg:grid-cols-3"
+          >
             {chooseUsCards.map((card, index) => (
-              <div
-                key={card.name}
-                onMouseEnter={() => {
-                  setHoveredCard(index);
-                  setAnyCardHovered(true);
-                }}
-                onMouseLeave={() => {
-                  setHoveredCard(null);
-                  setAnyCardHovered(false);
-                }}
-                className={`col-span-1 flex flex-col items-start justify-center py-8 px-8 border rounded-lg transition-all duration-300 ${
-                  hoveredCard === index
-                    ? "scale-100 opacity-100 shadow-md border-primary"
-                    : anyCardHovered
-                    ? "scale-95 opacity-40"
-                    : "scale-100 opacity-100"
-                }`}
-              >
-                <card.icon
-                  className={`h-12 w-12 transition-all duration-300 ${
-                    hoveredCard === index || !anyCardHovered
-                      ? "text-primary"
-                      : ""
+              <motion.div variants={fadeInUp} key={card.name}>
+                <div
+                  onMouseEnter={() => {
+                    setHoveredCard(index);
+                    setAnyCardHovered(true);
+                  }}
+                  onMouseLeave={() => {
+                    setHoveredCard(null);
+                    setAnyCardHovered(false);
+                  }}
+                  className={`col-span-1 flex flex-col items-start justify-center py-8 px-8 border rounded-lg transition-all duration-300 ${
+                    hoveredCard === index
+                      ? "scale-100 opacity-100 shadow-md border-primary"
+                      : anyCardHovered
+                      ? "scale-95 opacity-40"
+                      : "scale-100 opacity-100"
                   }`}
-                />
-                <h3 className="text-xl font-semibold mt-4">{card.name}</h3>
-                <p className="text-md mt-2">{card.description}</p>
-              </div>
+                >
+                  <card.icon
+                    className={`h-12 w-12 transition-all duration-300 ${
+                      hoveredCard === index || !anyCardHovered
+                        ? "text-primary"
+                        : ""
+                    }`}
+                  />
+                  <h3 className="text-xl font-semibold mt-4">{card.name}</h3>
+                  <p className="text-md mt-2">{card.description}</p>
+                </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import ContactForm from "./ContactForm";
 import ContactInfo from "./ContactInfo";
-// import ContactMap from "./ContactMap";
 
 const ContactPage = () => {
   return (
@@ -10,7 +9,6 @@ const ContactPage = () => {
           <ContactInfo />
           <ContactForm />
         </div>
-        {/* <ContactMap /> */}
       </section>
     </>
   );
